@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout/mainLayout::layout(~{::main})}" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main role="main">
+    <div class="container p-5 mt-5">
+
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Employees</h3>
+                    </div>
+                    <div class="card-body">
+                        <div th:replace="~{fragments/employeeTable::employeeTable}"></div>
+
+                        <a href="#" th:href="@{/createEmployee}" class="btn btn-primary my-3 text-center">Create Employees</a>
+                    </div>
+
+        </div>
+    </div>
+</main>
+</body>
+</html>
